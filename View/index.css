@@ -1,3 +1,22 @@
-div {
-    background-color: blue;
+.Master_DIV_Class {
+    background-color: ivory;
+}
+.Sectors_DIV_Class {
+    background-color: ivory;
+}
+.Reset_DIV_Class {
+    background-color: ivory;
+}
+/*-----------------------------------------*/
+.Bar_Sector_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.Bar_Row_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.Bar_Data_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
 }

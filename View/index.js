@@ -1,6 +1,9 @@
 //-----------------------------------------------------------------------------------------
+//Global
+var CaptainTables;
+//-----------------------------------------------------------------------------------------
 //Resize
-function setResize() {
+function onResize() {
 
 
 
@@ -11,14 +14,8 @@ function setResize() {
 };
 //-----------------------------------------------------------------------------------------
 //LOAD
-var variable;
 addEventListener("load", () => {
-
-    
-    setTable("Bar", 5, true, result => variable = result);
-
-    console.log(variable);
-
+    setInterval(() => { getTables(result => CaptainTables = result) }, 5000);
 
 
 
