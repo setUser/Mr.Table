@@ -1,5 +1,5 @@
-var http = require('http');
-var qs = require("querystring");
+const http = require('http');
+const qs = require("querystring");
 const fs = require('fs');
 //-----------------------------------------------------------------------------
 var CaptainTables;
@@ -35,7 +35,7 @@ http.createServer((req, res) => {
     if (req.url == "/getTables") {
         getTables(res);
     } else if (req.url == "/setTable") {
-        var body = "";
+        let body = "";
         req.on("data", data => { body += data });
         req.on("end", () => { setTable(qs.parse(body), res) });
     } else if (req.url == "/resetTables") {

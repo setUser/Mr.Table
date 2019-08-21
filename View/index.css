@@ -14,16 +14,100 @@
     background-color: ivory;
 }
 /*-----------------------------------------*/
+
+
+.Available_Table{
+    background-color: green;
+}
+.Occupied_Table{
+    background-color: red;
+}
+/*-----------------------------------------*/
+
 .Bar_Sector_Class {
     border-collapse: collapse;
     border: 2px red solid;
+    text-align: center;
+    width: 45%;
+
 }
 .Bar_Row_Class {
     border-collapse: collapse;
     border: 2px red solid;
+
 }
 .Bar_Data_Class {
     border-collapse: collapse;
     border: 2px red solid;
+    width: 7.5%;
+    
+}
+/*-----------------------------------------*/
+.PortUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    text-align: center;
+    width: 45%;
+
+
+}
+.PortUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.PortUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.PortDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    text-align: center;
+    width: 45%;
+}
+.PortDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.PortDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.LibertyDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    text-align: center;
+    width: 45%;
+}
+.LibertyDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.LibertyDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.LibertyUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    text-align: center;
+    width: 45%;
+}
+.LibertyUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+}
+.LibertyUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px red solid;
+    width: 7.5%;
 }
 /*-----------------------------------------*/
