@@ -54,7 +54,7 @@ http.createServer((req, res) => {
             if (err) {
                 console.log(err);
             }
-            //res.write(data);
+            res.write(data);
             res.end();
         });
     } else if (req.url == "/index.js") {
