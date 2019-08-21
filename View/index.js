@@ -93,3 +93,4 @@ function getTables(result) {
 function setTable(sectorVal, tableVal, stateVal, result) {
     $.post("setTable", { sector: sectorVal, table: tableVal, state: stateVal }, result);
 }
+//-----------------------------------------------------------------------------------------
