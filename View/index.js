@@ -15,7 +15,7 @@ function onResize() {
 //-----------------------------------------------------------------------------------------
 //LOAD
 addEventListener("load", () => {
-    setInterval(() => { getTables(result => CaptainTables = result) }, 5000);
+    //setInterval(() => { getTables(result => CaptainTables = result) }, 5000);
 
 
 
