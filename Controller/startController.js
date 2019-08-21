@@ -54,10 +54,10 @@ http.createServer((req, res) => {
             if (err) {
                 console.log(err);
             }
-            res.write(data);
+            //res.write(data);
             res.end();
         });
-    } else if (req.url == "/View/index.js") {
+    } else if (req.url == "/index.js") {
         res.writeHead(200, { 'Content-Type': 'text/js' });
         fs.readFile('./View/index.js', (err, data) => {
             if (err) {
@@ -66,7 +66,7 @@ http.createServer((req, res) => {
             res.write(data);
             res.end();
         });
-    } else if (req.url == "/View/index.css") {
+    } else if (req.url == "/index.css") {
         res.writeHead(200, { 'Content-Type': 'text/css' });
         fs.readFile('./View/index.css', (err, data) => {
             if (err) {
