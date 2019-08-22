@@ -1,24 +1,32 @@
 .Master_DIV_Class {
     background-color: white;
     width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 .Left_DIV_Class {
     background-color: white;
     position: absolute;
     width: 50%;
     left: 0px;
+    top: 0px;
 }
 .Right_DIV_Class {
     background-color: white;
     position: absolute;
-    right: 0px;
     width: 50%;
+    right: 0px;
+    top: 0px;
 }
 .Bottom_DIV_Class {
     background-color: white;
     position: absolute;
-    bottom: 0px;
     width: 98%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
 .Reset_Button_Class {
     border-collapse: collapse;
