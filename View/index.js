@@ -57,12 +57,22 @@ function _update() {
 function _setSectorState(sector) {
     let index = 0;
     CaptainTables[sector].forEach(element => {
-        if (element) {
-            $("#" + sector + "_" + index + "_ID").removeClass("Available_Table");
-            $("#" + sector + "_" + index + "_ID").addClass("Occupied_Table");
-        } else {
-            $("#" + sector + "_" + index + "_ID").removeClass("Occupied_Table");
-            $("#" + sector + "_" + index + "_ID").addClass("Available_Table");
+        switch (element) {
+            case 0:
+                $("#" + sector + "_" + index + "_ID").removeClass("Occupied_Table");
+                $("#" + sector + "_" + index + "_ID").removeClass("Cleaning_Table");
+                $("#" + sector + "_" + index + "_ID").addClass("Available_Table");
+                break;
+            case 1:
+                $("#" + sector + "_" + index + "_ID").removeClass("Cleaning_Table");
+                $("#" + sector + "_" + index + "_ID").removeClass("Available_Table");
+                $("#" + sector + "_" + index + "_ID").addClass("Occupied_Table");
+                break;
+            case 2:
+                $("#" + sector + "_" + index + "_ID").removeClass("Available_Table");
+                $("#" + sector + "_" + index + "_ID").removeClass("Occupied_Table");
+                $("#" + sector + "_" + index + "_ID").addClass("Cleaning_Table");
+                break;
         }
         index++;
     });
@@ -71,10 +81,16 @@ function _setSectorEvent(sector) {
     let index = 0;
     CaptainTables[sector].forEach(() => {
         $("#" + sector + "_" + index + "_ID").click({ param0: sector, param1: index }, (event) => {
-            if (CaptainTables[event.data.param0][event.data.param1]) {
-                setTable(event.data.param0, event.data.param1, false, result => { CaptainTables = result; _update() });
-            } else {
-                setTable(event.data.param0, event.data.param1, true, result => { CaptainTables = result; _update() });
+            switch (CaptainTables[event.data.param0][event.data.param1]) {
+                case 0:
+                    setTable(event.data.param0, event.data.param1, 1, result => { CaptainTables = result; _update() });
+                    break;
+                case 1:
+                    setTable(event.data.param0, event.data.param1, 2, result => { CaptainTables = result; _update() });
+                    break;
+                case 2:
+                    setTable(event.data.param0, event.data.param1, 0, result => { CaptainTables = result; _update() });
+                    break;
             }
         })
         index++;

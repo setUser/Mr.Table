@@ -40,6 +40,9 @@
 .Occupied_Table{
     background-color: red;
 }
+.Cleaning_Table{
+    background-color: yellow;
+}
 /*-----------------------------------------*/
 .Bar_Sector_Class {
     border-collapse: collapse;
