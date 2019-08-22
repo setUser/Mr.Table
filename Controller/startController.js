@@ -1,9 +1,15 @@
 const http = require('http');
 const qs = require("querystring");
 const fs = require('fs');
+const json = "./Resources/CaptainTables.json";
+const json_defaut = "./Resources/CaptainTables_default.json";
+const html = './View/index.html';
+const css = './View/index.css';
+const js = './View/index.js';
+const png = './Resources/icon.png';
 //-----------------------------------------------------------------------------
 var CaptainTables;
-fs.readFile("./Resources/CaptainTables.json", "utf8", (err, data) => {
+fs.readFile(json, "utf8", (err, data) => {
     if (err) {
         throw err;
     }
@@ -22,7 +28,7 @@ function setTable(body, res) {
     getTables(res);
 }
 function saveJSON() {
-    fs.writeFile("./Resources/CaptainTables.json", JSON.stringify(CaptainTables), err => {
+    fs.writeFile(json, JSON.stringify(CaptainTables), err => {
         if (err) {
             console.log(err);
         }
@@ -39,7 +45,7 @@ http.createServer((req, res) => {
         req.on("data", data => { body += data });
         req.on("end", () => { setTable(qs.parse(body), res) });
     } else if (req.url == "/resetTables") {
-        fs.readFile("./Resources/CaptainTables_default.json", "utf8", (err, data) => {
+        fs.readFile(json_defaut, "utf8", (err, data) => {
             if (err) {
                 throw err;
             }
@@ -50,7 +56,7 @@ http.createServer((req, res) => {
         //-----------------------------------------------------------------------------
     } else if (req.url == "/Resources/icon.png") {
         res.writeHead(200, { 'Content-Type': 'image/png' });
-        fs.readFile('./Resources/icon.png', (err, data) => {
+        fs.readFile(png, (err, data) => {
             if (err) {
                 console.log(err);
             }
@@ -59,7 +65,7 @@ http.createServer((req, res) => {
         });
     } else if (req.url == "/index.js") {
         res.writeHead(200, { 'Content-Type': 'text/js' });
-        fs.readFile('./View/index.js', (err, data) => {
+        fs.readFile(js, (err, data) => {
             if (err) {
                 console.log(err);
             }
@@ -68,7 +74,7 @@ http.createServer((req, res) => {
         });
     } else if (req.url == "/index.css") {
         res.writeHead(200, { 'Content-Type': 'text/css' });
-        fs.readFile('./View/index.css', (err, data) => {
+        fs.readFile(css, (err, data) => {
             if (err) {
                 console.log(err);
             }
@@ -77,7 +83,7 @@ http.createServer((req, res) => {
         });
     } else {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.readFile('./View/index.html', (err, data) => {
+        fs.readFile(html, (err, data) => {
             if (err) {
                 console.log(err);
             }
