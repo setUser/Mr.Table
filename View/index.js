@@ -3,7 +3,7 @@
 var CaptainTables;
 //-----------------------------------------------------------------------------------------
 //Resize
-function onResize() {
+function responsive() {
 
 
 
@@ -33,7 +33,7 @@ addEventListener("load", () => {
         _setSectorEvent("DockUp");
         _setSectorEvent("DockDown");
     })
-    setInterval(() => { getTables(result => { CaptainTables = result; _update() }) }, 3000);
+    setInterval(() => { getTables(result => { CaptainTables = result; _update() }) }, 5000);
     $("#Reset_Button_ID").click(() => { resetTables(result => { CaptainTables = result; _update() }) });
 });
 //-----------------------------------------------------------------------------------------

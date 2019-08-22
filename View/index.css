@@ -1,21 +1,31 @@
 .Master_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    width: 100%;
 }
 .Left_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    left: 0px;
 }
 .Right_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    width: 50%;
 }
 .Bottom_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 98%;
 }
 .Reset_Button_Class {
-    background-color: ivory;
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
 }
 /*-----------------------------------------*/
-
-
 .Available_Table{
     background-color: green;
 }
@@ -23,91 +33,122 @@
     background-color: red;
 }
 /*-----------------------------------------*/
-
 .Bar_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     text-align: center;
-    width: 45%;
-
+    width: 100%;
 }
 .Bar_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
-
+    border: 2px black solid;
+    width: 100%;
 }
 .Bar_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     width: 7.5%;
-    
 }
 /*-----------------------------------------*/
 .PortUp_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     text-align: center;
-    width: 45%;
-
-
+    width: 100%;
 }
 .PortUp_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 100%;
 }
 .PortUp_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     width: 7.5%;
 }
 /*-----------------------------------------*/
 .PortDown_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     text-align: center;
-    width: 45%;
+    width: 100%;
 }
 .PortDown_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 100%;
 }
 .PortDown_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     width: 7.5%;
 }
 /*-----------------------------------------*/
-
 .LibertyDown_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     text-align: center;
-    width: 45%;
+    width: 100%;
 }
 .LibertyDown_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 100%;
 }
 .LibertyDown_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     width: 7.5%;
 }
 /*-----------------------------------------*/
-
 .LibertyUp_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
     text-align: center;
-    width: 45%;
+    width: 100%;
 }
 .LibertyUp_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 100%;
 }
 .LibertyUp_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.SunDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.SunDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.SunDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.SunUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.SunUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.SunUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
     width: 7.5%;
 }
 /*-----------------------------------------*/
