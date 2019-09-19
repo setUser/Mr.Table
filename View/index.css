@@ -1,29 +1,303 @@
 .Master_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 .Left_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    top: 0px;
 }
 .Right_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    top: 0px;
 }
 .Bottom_DIV_Class {
-    background-color: ivory;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
 }
 .Reset_Button_Class {
-    background-color: ivory;
+
+    float: Bottom
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    clear: both;
+
+}
+
+
+
+/*-----------------------------------------*/
+.Available_Table{
+    background-color: red;
+}
+.Occupied_Table{
+    background-color: yellow;
+}
+.Cleaning_Table{
+    background-color: green;
+    
 }
 /*-----------------------------------------*/
 .Bar_Sector_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
 }
 .Bar_Row_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 100%;
 }
 .Bar_Data_Class {
     border-collapse: collapse;
-    border: 2px red solid;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.PortUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.PortUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.PortUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.PortDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.PortDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.PortDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.LibertyDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.LibertyDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.LibertyDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.LibertyUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.LibertyUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.LibertyUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.SunDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.SunDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.SunDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+.SunUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.SunUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.SunUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.CaptainUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.CaptainUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.CaptainUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.CaptainDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.CaptainDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.CaptainDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.DockUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.DockUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.DockUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.Neptune_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.Neptune_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.Neptune_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+
+.StarDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.StarDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.StarDown_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+/*-----------------------------------------*/
+
+.StarUp_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.StarUp_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.StarUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
+}
+
+
+/*-----------------------------------------*/
+
+.DockDown_Sector_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    text-align: center;
+    width: 100%;
+}
+.DockDown_Row_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 100%;
+}
+.StarUp_Data_Class {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 7.5%;
 }
 /*-----------------------------------------*/
